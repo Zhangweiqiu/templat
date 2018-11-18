@@ -18,13 +18,13 @@
 <div class="layui-header layui-bg-green ">
     <ul class="layui-nav layui-bg-green layui-nav-right">
         <li class="layui-nav-item">
-            <a href="">控制台<span class="layui-badge">9</span></a>
+            <a href="javascript:;">控制台<span class="layui-badge">9</span></a>
         </li>
         <li class="layui-nav-item">
-            <a href="">个人中心<span class="layui-badge-dot"></span></a>
+            <a href="javascript:;">个人中心<span class="layui-badge-dot"></span></a>
         </li>
         <li class="layui-nav-item">
-            <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+            <a href="javascript:;"><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
             <dl class="layui-nav-child">
                 <dd><a href="javascript:;">修改信息</a></dd>
                 <dd><a href="javascript:;">安全管理</a></dd>
@@ -36,68 +36,71 @@
 <div class="layui-side-scroll">
     <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="treenav">
         <li class="layui-logo"><img alt="" src="/images/logo.png"></li>
-        <li class="layui-nav-item">
+        <li class="layui-nav-item  layui-nav-itemed">
             <a href="javascript:;">用户管理</a>
             <dl class="layui-nav-child">
-                <dd><a href="">基本信息</a></dd>
-                <dd><a href="">用户冻结</a></dd>
+                <dd><a href="javascript:;" class="site-url" id="first" data-title="基本信息" data-id="0" data-url="./introduce.html">基本信息</a></dd>
+                <dd><a href="javascript:;">用户冻结</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
-        	<a href="">借贷管理</a>
+        	<a href="javascript:;">借贷管理</a>
         	<dl class="layui-nav-child">
-                <dd><a href="">待审列表</a></dd>
-                <dd><a href="">借款复审</a></dd>
-                <dd><a href="">结论列表</a></dd>
+                <dd><a href="javascript:;">待审列表</a></dd>
+                <dd><a href="javascript:;">借款复审</a></dd>
+                <dd><a href="javascript:;">结论列表</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
-        	<a href="">贷后管理</a>
+        	<a href="javascript:;">贷后管理</a>
         	<dl class="layui-nav-child">
-                <dd><a href="">代还款</a></dd>
-                <dd><a href="">已还款</a></dd>
-                <dd><a href="">逾期</a></dd>
-                 <dd><a href="">主动还款</a></dd>
-                <dd><a href="">催款</a></dd>
+                <dd><a href="javascript:;">代还款</a></dd>
+                <dd><a href="javascript:;">已还款</a></dd>
+                <dd><a href="javascript:;">逾期</a></dd>
+                 <dd><a href="javascript:;">主动还款</a></dd>
+                <dd><a href="javascript:;">催款</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
-        	<a href="">财务管理</a>
+        	<a href="javascript:;">财务管理</a>
         	<dl class="layui-nav-child">
-                <dd><a href="">代付管理</a></dd>
-                <dd><a href="">代扣管理</a></dd>
-                <dd><a href="">自动放款</a></dd>
-                <dd><a href="">放款设置</a></dd>
+                <dd><a href="javascript:;">代付管理</a></dd>
+                <dd><a href="javascript:;">代扣管理</a></dd>
+                <dd><a href="javascript:;">自动放款</a></dd>
+                <dd><a href="javascript:;">放款设置</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
-        	<a href="">运营管理</a>
+        	<a href="javascript:;">运营管理</a>
         	<dl class="layui-nav-child">
-                <dd><a href="">统计分析</a></dd>
+                <dd><a href="javascript:;">统计分析</a></dd>
             </dl>
         </li>
-        <li class="layui-nav-item"><a href="">前端文章管理</a></li>
-         <li class="layui-nav-item layui-nav-itemed">
+        <li class="layui-nav-item"><a href="javascript:;">前端文章管理</a></li>
+
+         <li class="layui-nav-item">
             <a href="javascript:;">管理员</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:;" class="site-url" data-title="选择1" data-id="1" data-url="../index.html">新增</a></dd>
-                <dd><a href="javascript:;" class="site-url" data-title="选择2" data-id="2" data-url="../index.html">删除</a></dd>
-                <dd><a href="">停用</a></dd>
+                <dd><a href="javascript:;" class="site-url" data-title="新增" data-id="1" data-url="../index.html">新增</a></dd>
+                <dd><a href="javascript:;" class="site-url" data-title="删除" data-id="2" data-url="../index.html">删除</a></dd>
+                <dd><a href="javascript:;">停用</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
         	<a href="javascript:;">短信管理</a>
         </li>
-        <li class="layui-nav-item"><a href="">系统设置</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">系统设置</a></li>
     </ul>
 </div>
 <div class="layui-body">
     <div class="layui-tab layui-tab-brief" lay-filter="contentnav" lay-allowClose="true">
         <ul class="layui-tab-title">
-            <li class="layui-this"></li>
+            <li class="layui-this" lay-id="99">首页</li>
         </ul>
         <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show"></div>
+            <div class="layui-tab-item layui-show">
+                <iframe data-frameid="99" scrolling="auto" frameborder="0" src="introduce.html" style="width:100%;height: 520px;"></iframe>
+            </div>
         </div>
     </div>
 </div>
@@ -105,4 +108,7 @@
 <script src="../js/jquery-1.6.4.min.js"></script>
 <script src="../layui/layui.all.js"></script>
 <script src="js/utils.js"></script>
+<script>
+
+</script>
 </html>

@@ -10,12 +10,12 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @MapperScan("com.nit.pang.model.repository")
 @EnableCaching
-public class PangApplication //extends SpringBootServletInitializer
+public class PangApplication extends SpringBootServletInitializer
 {
-//	@Override
-//	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-//		return application.sources(PangApplication.class);
-//	}
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(PangApplication.class);
+	}
     public static void main(String[] args) {
         SpringApplication.run(PangApplication.class, args);
     }
