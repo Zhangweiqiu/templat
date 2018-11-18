@@ -14,23 +14,17 @@ import javax.annotation.Resource;
 @RestController
 public class UserController {
 
-//    private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
     @Resource
     UserService userService;
 
-//    @RequestMapping("/login")
-//    public User login(){
-////        logger.info("测试 log info");
-////        logger.error("测试 log info");
-////        logger.debug("测试 log info");
-//
-//        return  userService.findOne();
-//    }
+    @RequestMapping("/login")
+    public User login(){
+        return  userService.findOne();
+    }
 
-//
-//    @RequestMapping("/getUser")
-//    private User getUserInfo(Integer uid){
-//        return userService.findOneById(uid);
-//    }
+
+    @RequestMapping("/getUser")
+    private User getUserInfo(Integer uid){
+        return userService.findOneById(uid);
+    }
 }
