@@ -8,6 +8,11 @@
     <link rel="shortcut icon" href="favicon.ico" >
     <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="stylesheet" href="css/index.css">
+    <style>
+    	.layui-logo{
+    		text-align: center;
+    	}
+    </style>
 </head>
 <body>
 <div class="layui-header layui-bg-green ">
@@ -30,34 +35,69 @@
 </div>
 <div class="layui-side-scroll">
     <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="treenav">
-        <li class="layui-logo">123</li>
-        <li class="layui-nav-item layui-nav-itemed">
-            <a href="javascript:;">默认展开</a>
+        <li class="layui-logo"><img alt="" src="/images/logo.png"></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">用户管理</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:;" class="site-url" data-title="选择1" data-id="1" data-url="../index.html">选项1</a></dd>
-                <dd><a href="javascript:;" class="site-url" data-title="选择2" data-id="2" data-url="../index.html">选项2</a></dd>
-                <dd><a href="">跳转</a></dd>
+                <dd><a href="">基本信息</a></dd>
+                <dd><a href="">用户冻结</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item">
-            <a href="javascript:;">解决方案</a>
-            <dl class="layui-nav-child">
-                <dd><a href="">移动模块</a></dd>
-                <dd><a href="">后台模版</a></dd>
-                <dd><a href="">电商平台</a></dd>
+        	<a href="">借贷管理</a>
+        	<dl class="layui-nav-child">
+                <dd><a href="">待审列表</a></dd>
+                <dd><a href="">借款复审</a></dd>
+                <dd><a href="">结论列表</a></dd>
             </dl>
         </li>
-        <li class="layui-nav-item"><a href="">产品</a></li>
-        <li class="layui-nav-item"><a href="">大数据</a></li>
+        <li class="layui-nav-item">
+        	<a href="">贷后管理</a>
+        	<dl class="layui-nav-child">
+                <dd><a href="">代还款</a></dd>
+                <dd><a href="">已还款</a></dd>
+                <dd><a href="">逾期</a></dd>
+                 <dd><a href="">主动还款</a></dd>
+                <dd><a href="">催款</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+        	<a href="">财务管理</a>
+        	<dl class="layui-nav-child">
+                <dd><a href="">代付管理</a></dd>
+                <dd><a href="">代扣管理</a></dd>
+                <dd><a href="">自动放款</a></dd>
+                <dd><a href="">放款设置</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+        	<a href="">运营管理</a>
+        	<dl class="layui-nav-child">
+                <dd><a href="">统计分析</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">前端文章管理</a></li>
+         <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">管理员</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;" class="site-url" data-title="选择1" data-id="1" data-url="../index.html">新增</a></dd>
+                <dd><a href="javascript:;" class="site-url" data-title="选择2" data-id="2" data-url="../index.html">删除</a></dd>
+                <dd><a href="">停用</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+        	<a href="javascript:;">短信管理</a>
+        </li>
+        <li class="layui-nav-item"><a href="">系统设置</a></li>
     </ul>
 </div>
 <div class="layui-body">
     <div class="layui-tab layui-tab-brief" lay-filter="contentnav" lay-allowClose="true">
         <ul class="layui-tab-title">
-            <li class="layui-this">网站设置</li>
+            <li class="layui-this"></li>
         </ul>
         <div class="layui-tab-content">
-            <div class="layui-tab-item layui-show">1</div>
+            <div class="layui-tab-item layui-show"></div>
         </div>
     </div>
 </div>
