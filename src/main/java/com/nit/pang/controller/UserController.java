@@ -24,7 +24,16 @@ public class UserController {
 
 
     @RequestMapping("/getUser")
-    private User getUserInfo(Integer uid){
+    public User getUserInfo(Integer uid){
         return userService.findOneById(uid);
+    }
+
+    @RequestMapping("/selectAllUser")
+    public void selectAllUser(Integer page, Integer limit,String keyword){
+
+        System.out.println(keyword);
+        System.out.println(page);
+        System.out.println(limit);
+
     }
 }

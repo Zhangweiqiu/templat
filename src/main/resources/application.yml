@@ -6,7 +6,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/nit?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/pang?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: pang2018!
 
